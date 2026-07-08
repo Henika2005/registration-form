@@ -1,48 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<h2>Registration Form</h2>
+<div class="container">
+    <form id="registerForm">
+        <h2>Registration Form</h2>
 
-<form>
+        <div class="input-box">
+            <label for="name">Full Name</label>
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter your full name"
+                required
+                minlength="3">
+        </div>
 
-<label>Full Name:</label><br>
-<input type="text" placeholder="Enter your full name" required><br><br>
+        <div class="input-box">
+            <label for="email">Email</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required>
+        </div>
 
-<label>Email:</label><br>
-<input type="email" placeholder="Enter your email" required><br><br>
+        <div class="input-box">
+            <label for="password">Password</label>
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+                minlength="6">
+        </div>
 
-<label>Password:</label><br>
-<input type="password" placeholder="Enter your password" required><br><br>
-<div class="gender">
-<label>Gender:</label><br>
+        <div class="input-box">
+            <label>Gender</label>
 
-<input type="radio" name="gender"> Male
-<input type="radio" name="gender"> Female
-<input type="radio" name="gender"> Other
+            <div class="gender">
+                <label>
+                    <input type="radio" name="gender" required>
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender">
+                    Other
+                </label>
+            </div>
+        </div>
+
+        <div class="input-box">
+            <label for="course">Course / Interest</label>
+
+            <select id="course" required>
+                <option value="">Select Course</option>
+                <option>Web Development</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>AI & ML</option>
+            </select>
+        </div>
+
+        <button type="submit">Register Now</button>
+    </form>
 </div>
-<br><br>
 
-<label>Course / Interest:</label><br>
-
-<select required>
-    <option>Select Course</option>
-    <option>Web Development</option>
-    <option>Java</option>
-    <option>Python</option>
-    <option>UI/UX</option>
-</select>
-
-<br><br>
-
-<input type="submit" value="Register Now">
-
-</form>
+<script src="script.js"></script>
 
 </body>
 </html>
