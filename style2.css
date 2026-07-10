@@ -17,12 +17,9 @@ border: 1px solid rgba(255,255,255,0.2);
 }
 
 .container{
-    width:900px;
-    background: rgba(45, 35, 110, 0.35);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255,255,255,0.2);
-    border-radius:20px;
-    ...
+    background: linear-gradient(135deg, #0B1F3A, #163B65);
+border: 1px solid rgba(255,255,255,0.2);
+box-shadow: 0 15px 40px rgba(0,0,0,0.35);
 }
 
 .left-side{
@@ -52,7 +49,7 @@ border: 1px solid rgba(255,255,255,0.2);
 }
 
 .right-side h2{
-    color:white;
+    color:#ffffff;
 }
 .input-box{
     position:relative;
@@ -108,14 +105,14 @@ select:focus{
 }
 
 label{
-    color:white;
+    color:#ffffff;
 }
 button{
     width:100%;
     padding:14px;
     border:none;
     border-radius:10px;
-    background:linear-gradient(90deg,#6a11cb,#2575fc);
+  background: linear-gradient(90deg, #0A3D91, #3FA9F5);
     color:white;
     font-size:17px;
     cursor:pointer;
@@ -123,8 +120,9 @@ button{
 }
 
 button:hover{
-    transform:translateY(-3px);
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(90deg, #072B63, #1E88E5);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 @media(max-width:768px){
 
