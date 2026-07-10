@@ -6,20 +6,21 @@
 }
 
 body{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    background: rgba(45, 35, 110, 0.35);
-backdrop-filter: blur(15px);
-border: 1px solid rgba(255,255,255,0.2);
-    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #071A35, #0B2E59, #174A7C);
+    overflow: hidden;
 }
 
 .container{
-    background: linear-gradient(135deg, #0B1F3A, #163B65);
-border: 1px solid rgba(255,255,255,0.2);
-box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+    width: 900px;
+    background: rgba(12, 35, 70, 0.92);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.35);
 }
 
 .left-side{
