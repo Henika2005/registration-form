@@ -190,3 +190,8 @@ button:active{
 transform:scale(.96);
 
 }
+#strength{
+    margin-top:8px;
+    font-size:14px;
+    font-weight:bold;
+}
