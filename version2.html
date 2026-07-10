@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form - Version 2</title>
+
+    <link rel="stylesheet" href="style2.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="left-side">
+        <h1>Create Your Account</h1>
+        <p>Join us and start your learning journey.</p>
+    </div>
+
+    <div class="right-side">
+
+        <form id="registerForm">
+
+            <h2>Register Now</h2>
+
+            <div class="input-box">
+	    <i class="fa fa-user"></i>
+	    <input type="text" id="fullname" placeholder="Full Name">
+		</div>
+		<small id="nameError" class="error"></small>
+
+            <div class="input-box">
+  	  <i class="fa fa-envelope"></i>
+	    <input type="email" id="email" placeholder="Email">
+	</div>
+	<small id="emailError" class="error"></small>
+
+            <div class="input-box">
+ 	   <i class="fa fa-lock"></i>
+ 	   <input type="password" id="password" placeholder="Password">
+	    <i class="fa-solid fa-eye toggle-password" id="togglePassword"></i>
+	</div>
+
+	<div id="strengthMessage"></div>
+	<small id="passwordError" class="error"></small>
+
+            <div class="input-box">
+    <i class="fa fa-lock"></i>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password">
+    <i class="fa-solid fa-eye toggle-password" id="toggleConfirmPassword"></i>
+</div>
+<small id="confirmError" class="error"></small>
+
+            <label>Gender</label><br>
+
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+
+            <br><br>
+
+            <select id="course">
+                <option>Select Course</option>
+                <option>BCA</option>
+                <option>BBA</option>
+                <option>B.Com</option>
+                <option>B.Sc</option>
+            </select>
+
+            <br><br>
+
+            <input type="date">
+
+            <br><br>
+
+            
+
+            <div class="input-box">
+                <i class="fa fa-city"></i>
+                <input type="text" placeholder="City">
+            </div>
+
+            <br>
+
+            <label>
+                <input type="checkbox">
+                I accept Terms & Conditions
+            </label>
+
+            <br><br>
+
+            <button type="submit">
+                Register Now
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="script2.js"></script>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>🎉 Registration Successful!</h2>
+        <p>Your account has been created successfully.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+</body>
+</html>
