@@ -10,17 +10,19 @@ body{
     justify-content:center;
     align-items:center;
     min-height:100vh;
-    background:linear-gradient(135deg,#5b2be0,#8a2be2,#c84cff);
+    background: rgba(45, 35, 110, 0.35);
+backdrop-filter: blur(15px);
+border: 1px solid rgba(255,255,255,0.2);
     overflow:hidden;
 }
 
 .container{
     width:900px;
-    background:white;
+    background: rgba(45, 35, 110, 0.35);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255,255,255,0.2);
     border-radius:20px;
-    display:flex;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,0.25);
+    ...
 }
 
 .left-side{
