@@ -1,4 +1,25 @@
 const form = document.getElementById("registerForm");
+const passwordInput = document.getElementById("password");
+const strength = document.getElementById("strength");
+
+passwordInput.addEventListener("input", function(){
+
+    const value = passwordInput.value;
+
+    if(value.length < 6){
+        strength.innerHTML = "🔴 Weak Password";
+        strength.style.color = "red";
+    }
+    else if(value.length < 10){
+        strength.innerHTML = "🟡 Medium Password";
+        strength.style.color = "orange";
+    }
+    else{
+        strength.innerHTML = "🟢 Strong Password";
+        strength.style.color = "green";
+    }
+
+});
 
 form.addEventListener("submit", function (e) {
 
